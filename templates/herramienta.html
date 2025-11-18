@@ -67,6 +67,18 @@
               </div>
             </div>
             {% endif %}
+
+            {% if powerbi_url %}
+            <div class="col-12 mt-4">
+              <div class="card shadow-sm p-3">
+                <h5 class="mb-3">Dashboard Power BI</h5>
+                <div class="ratio ratio-16x9">
+                  <iframe title="Sistema_menores" src="{{ powerbi_url }}" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <small class="text-muted d-block mt-2">Dashboard disponible para consulta.</small>
+              </div>
+            </div>
+            {% endif %}
           </div>
         </form>
 
